@@ -48,5 +48,5 @@ func handleConnection(conn net.Conn) {
 
 	remoteAddr := conn.RemoteAddr().String()
 	localAddr := conn.LocalAddr().String()
-	fmt.Printf("Connection accepted from %s to %s\n", remoteAddr, localAddr)
+	fmt.Println("Connection accepted from %s to %s\n", remoteAddr, localAddr)
 }
